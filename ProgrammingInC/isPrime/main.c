@@ -11,7 +11,7 @@ int main()
         printf("%i\n",i);
         if(number%i==0){
             printf("number is not prime");
-           // break;
+            break;
         }
 
     }
