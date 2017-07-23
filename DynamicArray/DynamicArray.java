@@ -63,39 +63,10 @@ public class DynamicArray {
         SIZE = SIZE - 1;
     }
     
-    
-    
     public int size() {
         return SIZE;
     }
 
-    public static void main(String[] args) {
-       
-        List<Integer> list = new ArrayList<>();
-        
-        list.add(0, 1);
-        
-        System.out.println(list.get(0));
-        
-        
-        DynamicArray array = new DynamicArray();
-        array.push(1);
-        array.push(2);
-        array.push(3);
-        
-        
-        System.out.println("Before delete");
-        //for(int i = 0; i <= array.size(); i++)
-            //System.out.println(array.get(i));
-            
-        //array.remove(0);
-        array.pop();
-        
-        System.out.println("After delete");
-        for(int i = 0; i < array.size(); i++)
-            System.out.println(array.get(i));
-        
-        System.out.println("Array Size: " + array.size());
-    }
+   }
 
 }
