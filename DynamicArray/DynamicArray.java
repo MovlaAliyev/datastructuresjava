@@ -12,16 +12,20 @@ public class DynamicArray {
     private int[] arr = new int[CAPACITY];
     private int[] new_arr;
     
-    public int get(int index){
+    
+    public void checkElementIndex(int index){
         if(index < 0 || index >= SIZE) 
             throw new ArrayIndexOutOfBoundsException();
+    }
+    
+    public int get(int index){
+        checkElementIndex(index);
         
         return arr[index];
     }
     
     public void remove(int index){
-        if(index < 0 || index >= SIZE)
-            throw new ArrayIndexOutOfBoundsException();
+        checkElementIndex(index);
         
         for(int i = index; i <= (SIZE - 2); i++)
             arr[i] = arr[i+1];
