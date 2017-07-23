@@ -38,7 +38,7 @@ public class DynamicArray {
             arr      = new_arr;
         }
         arr[SIZE] = value;
-        SIZE     = SIZE + 1;
+        SIZE      = SIZE + 1;
     }
     
     private int[] allocate(){
