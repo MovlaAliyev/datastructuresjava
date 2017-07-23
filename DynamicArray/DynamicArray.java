@@ -12,16 +12,6 @@ public class DynamicArray {
     private int[] arr = new int[CAPACITY];
     private int[] new_arr;
     
-    
-    
-    public void push(int index, int value){
-        if(index < 0)
-            throw new ArrayIndexOutOfBoundsException();
-        
-       
-            
-    }
-    
     public int get(int index){
         if(index < 0 || index >= SIZE) 
             throw new ArrayIndexOutOfBoundsException();
