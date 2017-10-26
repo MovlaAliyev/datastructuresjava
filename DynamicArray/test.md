@@ -55,7 +55,7 @@ public class SLinkedList {
         * head == null burada əgər list boşdusa əvvələ əlavə et funksiyyası cağrılır
         * əks halda else blokunda node head a point edir yəni listin başlanğıcına
         * və döngüdə null a point edən node ye qədər davam edir(sonuncu elemenrə qədər)
-        * tapıldığında yeni node yaradır dəyəri ora atır və əvvəlki (null a point edən) node ni yni yaranan nodeye point etdirir yeni yarananı isə null a
+        * tapıldığında yeni node yaradır dəyəri ora atır və əvvəlki (null a point edən) node ni yni yaranan nodeye point etdirir yeni           * yarananı isə null a
         */
         if(head == null)
             addFirst(data);
